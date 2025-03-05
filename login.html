@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>San Junipero - P01</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Lobster&family=Montserrat:wght@500&family=Open+Sans:ital,wght@1,300;1,800&family=Pacifico&family=Playpen+Sans:wght@800&family=Roboto:ital,wght@0,500;1,300&family=Spinnaker&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html" class="logo">VISIT<br />SAN <br />JUNIPERO</a>
+    <div class="menu-burger">
+      <img src="./images/menu-burger-icon.svg" class="burger-icon" alt="menu-icon" />
+    </div>
+    <nav class="side-bar">
+      <span class="close-icon">
+        <img src="./images/close-icon.png" alt="close-icon" width="55" height="55">
+      </span>
+      <ul class="sidar-items">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./our-team.html">Our Team</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./our-team.html">Our Team</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="login-page-main">
+    <div id="login-container">
+      <div id="login-heading-container">
+        <h1 id="login-heading-top">Login</h1>
+      </div>
+      <form action="login.php" method="post">
+        <div id="login-main">
+          <div class="form-group">
+            <label for="username" id="username_label">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required />
+          </div>
+          <div class="form-group">
+            <label for="password" id="password_label">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+          </div>
+          <div>
+            <a class="forgot-link" href="#">Forgot Password?</a>
+          </div>
+          <div class="form-group">
+            <input type="submit" id="login-id" value="Login" />
+          </div>
+        </div>
+        <button class="google-signin-btn">
+          <img src="./images/google-icon.png" alt="Google Icon"> Sign in with Google
+        </button>
+        <p class="auth-link">
+          Don't have an account?
+          <a class="sign-up" href="/signup/new">Sign up</a>
+        </p>
+      </form>
+    </div>
+  </main>
+  <!-- </div>      -->
+  <footer class="footer">
+    <div id="copyright">
+      <p>&copy; Kai Aditya Ayesha</p>
+    </div>
+  </footer>
+  <script src="./script/menu-burger-script.js"></script>
+</body>
+
+</html>
